@@ -5,6 +5,7 @@ import Head from 'next/head'
 import Layout from '../components/layout';
 import siteTitle from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,16 @@ const Home: NextPage = () => {
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
+      <div>
+        <Link href="/posts/first-post">
+          <a>first post</a>
+        </Link>
+      </div>
+      <div>
+        <Link href="/time">
+          <a>getInitialProps page</a>
+        </Link>
+      </div>
     </Layout>
   )
 }
